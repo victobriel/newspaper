@@ -1,0 +1,158 @@
+.container {
+    max-width: 43.75rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: .3125rem solid yellow;
+    padding-bottom: .25rem;
+}
+
+header .date {
+    border-bottom: solid .1875rem #333;
+    margin: 2em 0 .5em 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header .newspaper {
+    font-family: 'Ultra', serif;
+    font-size: 4em;
+    text-align: center;
+    background-color: rgb(184, 0, 0);
+    color: white;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+main {
+    color: #a1a1a1;
+    position: relative;
+}
+
+main .container {
+    display: flex;
+    gap: 1em;
+}
+
+main .subject {
+    padding: .5em 0;
+}
+
+main .container .notice {
+    margin: 0 0 1rem 0;
+}
+
+main .banner_container {
+    position: relative;
+    min-height: 450px;
+    min-width: 450px;
+}
+
+main .banner_container .banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .banner_container::before {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: 0.4;
+}
+
+.banner_title {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    font-size: 4em;
+    color: white;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.banner_title b {
+    color:chartreuse;
+}
+
+.banner_content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 0, 0.527);
+    color: white;
+}
+
+.banner_content a {
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+
+.notice_title {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+    font-size: 1.25rem;
+}
+
+.notice_title b {
+    background-color: yellow;
+}
+
+main .container:last-of-type {
+    margin: 1rem 0 0;
+}
+
+main .container:last-of-type .notice_title {
+    background-color: #242424;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px;
+    line-height: 1.2;
+}
+
+main .container:last-of-type .notice_title b {
+    background-color: rgb(184, 0, 0);
+}
+
+.footer {
+    display: flex;
+    border-top: 5px double #242424;
+    padding-top: .5rem;
+    gap: 1em;
+    justify-content: space-between;
+    position: relative;
+}
+
+.footer .footer_title {
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+}
+
+.footer .footer_content {
+    font-size: 14px;
+}
+
+.footer .footer_image {
+    width: 70px;
+    height: 70px;
+}
